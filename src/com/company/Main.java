@@ -1,7 +1,5 @@
 package com.company;
 
-import sun.jvm.hotspot.utilities.ObjectReader;
-
 import java.util.Scanner;
 
 public class Main {
