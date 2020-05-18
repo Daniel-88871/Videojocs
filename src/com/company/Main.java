@@ -22,6 +22,13 @@ public class Main {
             } else if (opcion == 0) {
                 break;
             }
+            if (opcion == 1) {
+                System.out.println("Lanzando Tres...");
+                SimonGame simonGame = new SimonGame();
+                simonGame.lanzar();
+                System.out.println("...juego Simon terminado.");
+            } else if (opcion == 0) {
+                break;
         }
     }
 }
