@@ -37,10 +37,8 @@ public class TresEnRaya {
             System.out.println();
         }
     }
-
     void jugar() {
-
-        for (turno = 1; jugar == true; turno++) {
+        for (turno = 1; jugar; turno++) {
             casillaJugador();
             for (int i = 0; i < 3; i++) {
                 for (int j = 0; j < 3; j++) {
@@ -48,7 +46,6 @@ public class TresEnRaya {
 
                         tablero[i][j] = jugador;
                     }
-
                 }
             }
             for (int j = 0; j < 3; j++) {
@@ -64,18 +61,13 @@ public class TresEnRaya {
                 limpiarpantalla();
                 break;
             }
-
         }
-
     }
-
     void limpiarpantalla() {
         for (int i = 0; i < 10; i++) {
             System.out.println(" ");
-
         }
     }
-
     void comprobarGanador() {
         if ((tablero[0][0] == "X" && tablero[0][1] == "X" && tablero[0][2] == "X" || tablero[0][0] == "X" && tablero[1][0] == "X" && tablero[2][0] == "X" || tablero[0][2] == "X" && tablero[1][2] == "X" && tablero[2][2] == "X" || tablero[2][0] == "X" && tablero[2][1] == "X" && tablero[2][2] == "X" || tablero[1][0] == "X" && tablero[1][1] == "X" && tablero[1][2] == "X" || tablero[0][0] == "X" && tablero[1][1] == "X" && tablero[2][2] == "X" || tablero[0][2] == "X" && tablero[1][1] == "X" && tablero[2][0] == "X" || tablero[0][1] == "X" && tablero[1][1] == "X" && tablero[2][1] == "X")) {
             System.out.println("Gana el jugador X !!");
@@ -90,7 +82,6 @@ public class TresEnRaya {
                 jugar = false;
                 System.out.println("Gracias por jugar");
                 System.out.println("Saliendo del Tres en raya...");
-
             } else {
                 System.out.println("Numero no valido");
             }
@@ -103,12 +94,10 @@ public class TresEnRaya {
                 jugador = "X";
                 jugar = true;
                 limpiarTablero();
-
             } else if (seguirjugando == 1) {
                 jugar = false;
                 System.out.println("Gracias por jugar");
                 System.out.println("Saliendo del Tres en raya...");
-
             } else {
                 System.out.println("Numero no valido");
             }
@@ -124,14 +113,11 @@ public class TresEnRaya {
                 jugar = false;
                 System.out.println("Gracias por jugar");
                 System.out.println("Saliendo del Tres en raya...");
-
-
             } else {
                 System.out.println("Numero no valido");
             }
         }
     }
-
     void limpiarTablero() {
         jugador = "X";
         for (int i = 0; i < 3; i++) {
@@ -140,7 +126,6 @@ public class TresEnRaya {
             }
         }
     }
-
     void casillaJugador() {
         boolean vacia = false;
         for (; vacia == false; ) {
@@ -153,6 +138,3 @@ public class TresEnRaya {
         }
     }
 }
-
-
-
