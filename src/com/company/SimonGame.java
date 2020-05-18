@@ -11,7 +11,6 @@ public class SimonGame {
     int turno = 1;
     int numeroJugadores;
     boolean seguirJugando;
-    // boolean[] eliminados = new boolean[numeroJugadores];
 
     public void lanzar() {
         darBienvenida();
@@ -76,38 +75,3 @@ public class SimonGame {
         System.out.println("BIENVENIDO AL SIMON DICE");
     }
 }
-
-/*
-
-BIENVENIDO!
-
-Cuantos jugadores:
-4
-
-Jugador 1:
-A
-
-Simon dice:
-AB
-
-Jugador 2:
-AB
-
-Simon dice:
-ABB
-
-Jugador 3:
-ABB
-
-Simon dice:
-ABBD
-
-Jugador 4:
-ABBDC
-
-Jugador 1:
-ABBDC
-
-Eliminado
-
-*/
