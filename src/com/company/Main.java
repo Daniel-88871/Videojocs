@@ -24,11 +24,12 @@ public class Main {
             }
             if (opcion == 1) {
                 System.out.println("Lanzando Tres...");
-                SimonGame simonGame = new SimonGame();
-                simonGame.lanzar();
-                System.out.println("...juego Simon terminado.");
+                TresEnRaya tresenRaya = new TresEnRaya();
+                tresenRaya.lanzar();
+                System.out.println("...juego Tres terminado.");
             } else if (opcion == 0) {
                 break;
+            }
         }
     }
 }
