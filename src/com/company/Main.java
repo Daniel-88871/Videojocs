@@ -22,7 +22,7 @@ public class Main {
             } else if (opcion == 0) {
                 break;
             }
-            if (opcion == 1) {
+            if (opcion == 2) {
                 System.out.println("Lanzando Tres...");
                 TresEnRaya tresenRaya = new TresEnRaya();
                 tresenRaya.lanzar();
