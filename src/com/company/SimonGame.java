@@ -62,7 +62,7 @@ public class SimonGame {
         System.out.println(mem);
         System.out.println("(press any key...)");
 
-        for (int i = 0; i < 80; i++) {
+        for (int i = 0; i < 2; i++) {
             System.out.println();
         }
     }
