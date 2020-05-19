@@ -15,6 +15,7 @@ public class TresEnRaya {
     public void lanzar() {
         darBienvenida();
         crearTablero();
+        jugar();
     }
 
     void darBienvenida() {
@@ -64,7 +65,7 @@ public class TresEnRaya {
         }
     }
     void limpiarpantalla() {
-        for (int i = 0; i < 10; i++) {
+        for (int i = 0; i < 2; i++) {
             System.out.println(" ");
         }
     }
@@ -135,6 +136,46 @@ public class TresEnRaya {
                 jugador = "O";
             }
             System.out.println("Escoge tu casilla:");
+            int casilla= scanner.nextInt();
+            if (casilla == 1 && !(tablero[0][0]=="X" || tablero[0][0]=="O")){
+                x=0;
+                y=0;
+                vacia=true;
+            }else if (casilla ==2 && !(tablero[0][1]=="X" || tablero[0][1]=="O")){
+                x=0;
+                y=1;
+                vacia=true;
+            }else if (casilla ==3 && !(tablero[0][2]=="X" || tablero[0][2]=="O")){
+                x=0;
+                y=2;
+                vacia=true;
+            }else if (casilla==4 && !(tablero[1][0]=="X" || tablero[1][0]=="O")){
+                x=1;
+                y=0;
+                vacia=true;
+            }else if (casilla==5 && !(tablero[1][1]=="X" || tablero[1][1]=="O")){
+                x=1;
+                y=1;
+                vacia=true;
+            }else if (casilla==6 && !(tablero[1][2]=="X" || tablero[1][2]=="O")){
+                x=1;
+                y=2;
+                vacia=true;
+            }else if (casilla==7 && !(tablero[2][0]=="X" || tablero[2][0]=="O")){
+                x=2;
+                y=0;
+                vacia=true;
+            }else if (casilla==8 && !(tablero[2][1]=="X" || tablero[2][1]=="O")){
+                x=2;
+                y=1;
+                vacia=true;
+            }else if (casilla==9 && !(tablero[2][2]=="X" || tablero[2][2]=="O")){
+                x=2;
+                y=2;
+                vacia=true;
+            }else{
+                System.out.println("Error casilla ocupada!");
+            }
         }
     }
 }

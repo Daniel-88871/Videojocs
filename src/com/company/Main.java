@@ -10,7 +10,7 @@ public class Main {
         while (true) {
             System.out.println("MULTIJUEGOS");
 
-            System.out.println("1) Simon  2) Tres  3) Ahorcado");
+            System.out.println("1) Simon  2) Tres");
 
             int opcion = scanner.nextInt();
 
