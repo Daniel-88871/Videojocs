@@ -10,7 +10,7 @@ public class Main {
         while (true) {
             System.out.println("MULTIJUEGOS");
 
-            System.out.println("1) Simon  2) Tres");
+            System.out.println("1) Simon  2) Tres  3) Ahorcado");
 
             int opcion = scanner.nextInt();
 
@@ -27,6 +27,14 @@ public class Main {
                 TresEnRaya tresenRaya = new TresEnRaya();
                 tresenRaya.lanzar();
                 System.out.println("...juego Tres terminado.");
+            } else if (opcion == 0) {
+                break;
+            }
+            if (opcion == 3) {
+                System.out.println("Lanzando Ahorcado...");
+                Ahorcado ahorcado = new Ahorcado();
+                ahorcado.lanzar();
+                System.out.println("...juego Ahorcado terminado.");
             } else if (opcion == 0) {
                 break;
             }

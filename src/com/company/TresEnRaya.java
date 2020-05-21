@@ -19,7 +19,7 @@ public class TresEnRaya {
     }
 
     void darBienvenida() {
-        System.out.println("BIENVENIDO AL Tres En Raya");
+        System.out.println("BIENVENIDO AL TRES EN RAYA");
     }
 
     void crearTablero() {
