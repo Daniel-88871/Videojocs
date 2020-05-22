@@ -8,9 +8,14 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("MULTIJUEGOS");
+            System.out.println("Videojuegos");
 
-            System.out.println("1) Simon  2) Tres  3) Ahorcado");
+            System.out.println("                ELIJE UN JUEGO ^_^          ");
+            System.out.println("       ----------------------------------   ");
+            System.out.println("      || *       1 - Simon dice       * ||  ");
+            System.out.println("      || *       2 - Tres en raya     * ||  ");
+            System.out.println("      || *       3 - Ahorcado         * ||  ");
+            System.out.println("       ----------------------------------   ");
 
             int opcion = scanner.nextInt();
 
