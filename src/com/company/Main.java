@@ -2,7 +2,6 @@ package com.company;
 
 import Ahorcado.Ahorcado;
 import Simon.SimonGame;
-import TresEnRaya.Lanzar;
 
 import java.util.Scanner;
 

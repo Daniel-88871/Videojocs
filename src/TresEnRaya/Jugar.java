@@ -1,7 +1,5 @@
 package TresEnRaya;
 
-import java.util.Scanner;
-
 public class Jugar {
 
     Jugador jugador1 = new Jugador();
