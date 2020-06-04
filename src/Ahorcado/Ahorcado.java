@@ -1,4 +1,4 @@
-package com.company;
+package Ahorcado;
 
 import java.util.Random;
 import java.util.Scanner;
