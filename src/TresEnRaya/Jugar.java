@@ -10,7 +10,6 @@ public class Jugar {
             System.out.println(" ");
         }
     }
-
     void jugar() {
         for (jugador1.turno = 1; jugador1.jugar; jugador1.turno++) {
             jugador1.casillaJugador();

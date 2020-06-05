@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class Jugador {
 
     Scanner scanner = new Scanner(System.in);
-    Jugar jugar1 = new Jugar();
     Tablero tablero1 = new Tablero();
     int seguirjugando = 0;
     int turno;
