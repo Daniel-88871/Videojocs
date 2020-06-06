@@ -1,6 +1,5 @@
 package com.company;
 
-import Ahorcado.Ahorcado;
 import Simon.SimonGame;
 
 import java.util.Scanner;
@@ -40,8 +39,8 @@ public class Main {
             }
             if (opcion == 3) {
                 System.out.println("Lanzando Ahorcado...");
-                Ahorcado ahorcado = new Ahorcado();
-                ahorcado.lanzar();
+                Ahorcado.Lanzar lanzar3 = new Ahorcado.Lanzar();
+                lanzar3.lanzar();
                 System.out.println("...juego Ahorcado terminado.");
             } else if (opcion == 0) {
                 break;

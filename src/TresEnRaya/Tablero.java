@@ -5,6 +5,7 @@ public class Tablero {
     String[][] tablero = new String[3][3];
     String jugador = "X";
 
+
     void limpiarTablero() {
         jugador = "X";
         for (int i = 0; i < 3; i++) {
@@ -13,7 +14,7 @@ public class Tablero {
             }
         }
     }
-    void limpiarpantalla() {
+    void limpiarPantalla() {
         for (int i = 0; i < 2; i++) {
             System.out.println(" ");
         }
