@@ -22,6 +22,7 @@ public class Juego {
     void comprobarFinPartida() {
         if (numeroJugadores == 0) {
             System.out.println("FIN PARTIDA");
+            seguirJugando = false;
         }
     }
     void jugadorResponde() {
