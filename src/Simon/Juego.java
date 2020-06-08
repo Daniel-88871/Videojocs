@@ -3,7 +3,7 @@ package Simon;
 import java.util.Random;
 import java.util.Scanner;
 
-public class SimonGame {
+public class Juego {
 
     Scanner scanner = new Scanner(System.in);
     String mem = "";
@@ -12,20 +12,6 @@ public class SimonGame {
     int numeroJugadores;
     boolean seguirJugando;
 
-    public void lanzar() {
-        darBienvenida();
-        pedirNumeroJugadores();
-
-        seguirJugando = true;
-
-        while (seguirJugando) {
-            simonDice();
-            jugadorResponde();
-            comprobarRespuesta();
-            pasarTurno();
-            comprobarFinPartida();
-        }
-    }
     void pasarTurno() {
         turno++;
 
@@ -70,8 +56,5 @@ public class SimonGame {
 
         numeroJugadores = scanner.nextInt();
         scanner.nextLine();
-    }
-    void darBienvenida() {
-        System.out.println("BIENVENIDO AL SIMON DICE");
     }
 }

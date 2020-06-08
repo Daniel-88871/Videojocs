@@ -1,7 +1,5 @@
 package com.company;
 
-import Simon.SimonGame;
-
 import java.util.Scanner;
 
 public class Main {
@@ -23,8 +21,8 @@ public class Main {
 
             if (opcion == 1) {
                 System.out.println("Lanzando Simon...");
-                SimonGame simonGame = new SimonGame();
-                simonGame.lanzar();
+                Simon.Lanzar lanzar1 = new Simon.Lanzar();
+                lanzar1.lanzar();
                 System.out.println("...juego Simon terminado.");
             } else if (opcion == 0) {
                 break;
